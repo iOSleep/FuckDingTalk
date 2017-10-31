@@ -36,8 +36,7 @@ CHConstructor{
 CHDeclareClass(DTAboutDingController);
 CHOptimizedMethod0(self, void, DTAboutDingController, copyright) {
     [DingtalkPluginConfig sharedInstance].open = ![DingtalkPluginConfig sharedInstance].open;
-    NSString *str = [DingtalkPluginConfig sharedInstance].open ? @"开启" : @"关闭";
-//    [(WrappedHUDHelper *)[NSClassFromString(@"WrappedHUDHelper") sharedHelper] showHUDOnFrontWithSuccessTitle:str duration:1.0 blockUI:NO];
+    NSString *str = [DingtalkPluginConfig sharedInstance].open ? @"FakeGPS" : @"Good Boy";
     [(WrappedHUDHelper *)[NSClassFromString(@"WrappedHUDHelper") sharedHelper] showHUDOnFrontWithTitle:str duration:1];
 }
 CHConstructor{
