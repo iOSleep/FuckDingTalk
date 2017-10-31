@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A4E0BB61FA8DBE70042B6C6 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0BB51FA8DBE70042B6C6 /* MethodTraceConfig.plist */; };
+		5A4E0BB91FA8DBE70042B6C6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0BB81FA8DBE70042B6C6 /* put ipa or app here */; };
+		5A4E0BC11FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A4E0BC01FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A4E0BC61FA8DBE70042B6C6 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E0BC51FA8DBE70042B6C6 /* Cycript.framework */; };
+		5A4E0BC81FA8DBE70042B6C6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E0BC71FA8DBE70042B6C6 /* JavaScriptCore.framework */; };
+		5A4E0BCA1FA8DBE70042B6C6 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E0BC91FA8DBE70042B6C6 /* RevealServer.framework */; };
+		5A4E0BCC1FA8DBE70042B6C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E0BCB1FA8DBE70042B6C6 /* Foundation.framework */; };
+		5A4E0BCE1FA8DBE70042B6C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E0BCD1FA8DBE70042B6C6 /* UIKit.framework */; };
+		5A4E0BD21FA8DBE70042B6C6 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E0BD11FA8DBE70042B6C6 /* ANYMethodLog.h */; };
+		5A4E0BD41FA8DBE70042B6C6 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BD31FA8DBE70042B6C6 /* ANYMethodLog.m */; };
+		5A4E0BD61FA8DBE70042B6C6 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E0BD51FA8DBE70042B6C6 /* MethodTrace.h */; };
+		5A4E0BD81FA8DBE70042B6C6 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BD71FA8DBE70042B6C6 /* MethodTrace.m */; };
+		5A4E0BDD1FA8DBE70042B6C6 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BDC1FA8DBE70042B6C6 /* AntiAntiDebug.m */; };
+		5A4E0BE01FA8DBE70042B6C6 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BDF1FA8DBE70042B6C6 /* fishhook.c */; };
+		5A4E0BE21FA8DBE70042B6C6 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E0BE11FA8DBE70042B6C6 /* fishhook.h */; };
+		5A4E0BE51FA8DBE70042B6C6 /* FuckDingTalkDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BE41FA8DBE70042B6C6 /* FuckDingTalkDylib.mm */; };
+		5A4E0BE71FA8DBE70042B6C6 /* FuckDingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4E0BE61FA8DBE70042B6C6 /* FuckDingTalkDylib.h */; };
+		5A4E0BE91FA8DBE70042B6C6 /* FuckDingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BE81FA8DBE70042B6C6 /* FuckDingTalkDylib.m */; };
+		5A4E0BF51FA8DC050042B6C6 /* DingtalkPluginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0BF21FA8DC050042B6C6 /* DingtalkPluginConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A4E0BC21FA8DBE70042B6C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A4E0BA71FA8DBE70042B6C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A4E0BBF1FA8DBE70042B6C6;
+			remoteInfo = FuckDingTalkDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A4E0BAF1FA8DBE70042B6C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A4E0BC11FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A4E0BB21FA8DBE70042B6C6 /* FuckDingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckDingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4E0BB51FA8DBE70042B6C6 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		5A4E0BB81FA8DBE70042B6C6 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		5A4E0BBA1FA8DBE70042B6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4E0BC01FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFuckDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4E0BC51FA8DBE70042B6C6 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		5A4E0BC71FA8DBE70042B6C6 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5A4E0BC91FA8DBE70042B6C6 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		5A4E0BCB1FA8DBE70042B6C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A4E0BCD1FA8DBE70042B6C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A4E0BD11FA8DBE70042B6C6 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		5A4E0BD31FA8DBE70042B6C6 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		5A4E0BD51FA8DBE70042B6C6 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		5A4E0BD71FA8DBE70042B6C6 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		5A4E0BDA1FA8DBE70042B6C6 /* FuckDingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckDingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
+		5A4E0BDC1FA8DBE70042B6C6 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		5A4E0BDF1FA8DBE70042B6C6 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		5A4E0BE11FA8DBE70042B6C6 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		5A4E0BE31FA8DBE70042B6C6 /* FuckDingTalkDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckDingTalkDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		5A4E0BE41FA8DBE70042B6C6 /* FuckDingTalkDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FuckDingTalkDylib.mm; sourceTree = "<group>"; };
+		5A4E0BE61FA8DBE70042B6C6 /* FuckDingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuckDingTalkDylib.h; sourceTree = "<group>"; };
+		5A4E0BE81FA8DBE70042B6C6 /* FuckDingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuckDingTalkDylib.m; sourceTree = "<group>"; };
+		5A4E0BF21FA8DC050042B6C6 /* DingtalkPluginConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingtalkPluginConfig.m; sourceTree = "<group>"; };
+		5A4E0BF31FA8DC050042B6C6 /* WrappedHUDHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WrappedHUDHelper.h; sourceTree = "<group>"; };
+		5A4E0BF41FA8DC050042B6C6 /* DingtalkPluginConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingtalkPluginConfig.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A4E0BAC1FA8DBE70042B6C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4E0BBD1FA8DBE70042B6C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E0BC81FA8DBE70042B6C6 /* JavaScriptCore.framework in Frameworks */,
+				5A4E0BCA1FA8DBE70042B6C6 /* RevealServer.framework in Frameworks */,
+				5A4E0BC61FA8DBE70042B6C6 /* Cycript.framework in Frameworks */,
+				5A4E0BCC1FA8DBE70042B6C6 /* Foundation.framework in Frameworks */,
+				5A4E0BCE1FA8DBE70042B6C6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A4E0BA61FA8DBE70042B6C6 = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BB41FA8DBE70042B6C6 /* FuckDingTalk */,
+				5A4E0BCF1FA8DBE70042B6C6 /* FuckDingTalkDylib */,
+				5A4E0BC41FA8DBE70042B6C6 /* Frameworks */,
+				5A4E0BB31FA8DBE70042B6C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A4E0BB31FA8DBE70042B6C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BB21FA8DBE70042B6C6 /* FuckDingTalk.app */,
+				5A4E0BC01FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A4E0BB41FA8DBE70042B6C6 /* FuckDingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BB51FA8DBE70042B6C6 /* MethodTraceConfig.plist */,
+				5A4E0BBA1FA8DBE70042B6C6 /* Info.plist */,
+				5A4E0BB71FA8DBE70042B6C6 /* TargetApp */,
+			);
+			path = FuckDingTalk;
+			sourceTree = "<group>";
+		};
+		5A4E0BB71FA8DBE70042B6C6 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BB81FA8DBE70042B6C6 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		5A4E0BC41FA8DBE70042B6C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BC51FA8DBE70042B6C6 /* Cycript.framework */,
+				5A4E0BC71FA8DBE70042B6C6 /* JavaScriptCore.framework */,
+				5A4E0BC91FA8DBE70042B6C6 /* RevealServer.framework */,
+				5A4E0BCB1FA8DBE70042B6C6 /* Foundation.framework */,
+				5A4E0BCD1FA8DBE70042B6C6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A4E0BCF1FA8DBE70042B6C6 /* FuckDingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BE31FA8DBE70042B6C6 /* FuckDingTalkDylib.xm */,
+				5A4E0BE41FA8DBE70042B6C6 /* FuckDingTalkDylib.mm */,
+				5A4E0BE61FA8DBE70042B6C6 /* FuckDingTalkDylib.h */,
+				5A4E0BE81FA8DBE70042B6C6 /* FuckDingTalkDylib.m */,
+				5A4E0BF41FA8DC050042B6C6 /* DingtalkPluginConfig.h */,
+				5A4E0BF21FA8DC050042B6C6 /* DingtalkPluginConfig.m */,
+				5A4E0BF31FA8DC050042B6C6 /* WrappedHUDHelper.h */,
+				5A4E0BD01FA8DBE70042B6C6 /* MethodTrace */,
+				5A4E0BDB1FA8DBE70042B6C6 /* AntiAntiDebug */,
+				5A4E0BDE1FA8DBE70042B6C6 /* fishhook */,
+				5A4E0BD91FA8DBE70042B6C6 /* Supporting Files */,
+			);
+			path = FuckDingTalkDylib;
+			sourceTree = "<group>";
+		};
+		5A4E0BD01FA8DBE70042B6C6 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BD11FA8DBE70042B6C6 /* ANYMethodLog.h */,
+				5A4E0BD31FA8DBE70042B6C6 /* ANYMethodLog.m */,
+				5A4E0BD51FA8DBE70042B6C6 /* MethodTrace.h */,
+				5A4E0BD71FA8DBE70042B6C6 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		5A4E0BD91FA8DBE70042B6C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BDA1FA8DBE70042B6C6 /* FuckDingTalkDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A4E0BDB1FA8DBE70042B6C6 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BDC1FA8DBE70042B6C6 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		5A4E0BDE1FA8DBE70042B6C6 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E0BDF1FA8DBE70042B6C6 /* fishhook.c */,
+				5A4E0BE11FA8DBE70042B6C6 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A4E0BBE1FA8DBE70042B6C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E0BE71FA8DBE70042B6C6 /* FuckDingTalkDylib.h in Headers */,
+				5A4E0BD21FA8DBE70042B6C6 /* ANYMethodLog.h in Headers */,
+				5A4E0BD61FA8DBE70042B6C6 /* MethodTrace.h in Headers */,
+				5A4E0BE21FA8DBE70042B6C6 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A4E0BB11FA8DBE70042B6C6 /* FuckDingTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4E0BEF1FA8DBE70042B6C6 /* Build configuration list for PBXNativeTarget "FuckDingTalk" */;
+			buildPhases = (
+				5A4E0BAB1FA8DBE70042B6C6 /* Sources */,
+				5A4E0BAC1FA8DBE70042B6C6 /* Frameworks */,
+				5A4E0BAD1FA8DBE70042B6C6 /* ShellScript */,
+				5A4E0BAE1FA8DBE70042B6C6 /* Resources */,
+				5A4E0BAF1FA8DBE70042B6C6 /* CopyFiles */,
+				5A4E0BB01FA8DBE70042B6C6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A4E0BC31FA8DBE70042B6C6 /* PBXTargetDependency */,
+			);
+			name = FuckDingTalk;
+			productName = FuckDingTalk;
+			productReference = 5A4E0BB21FA8DBE70042B6C6 /* FuckDingTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A4E0BBF1FA8DBE70042B6C6 /* FuckDingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4E0BEC1FA8DBE70042B6C6 /* Build configuration list for PBXNativeTarget "FuckDingTalkDylib" */;
+			buildPhases = (
+				5A4E0BBB1FA8DBE70042B6C6 /* ShellScript */,
+				5A4E0BBC1FA8DBE70042B6C6 /* Sources */,
+				5A4E0BBD1FA8DBE70042B6C6 /* Frameworks */,
+				5A4E0BBE1FA8DBE70042B6C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuckDingTalkDylib;
+			productName = FuckDingTalkDylib;
+			productReference = 5A4E0BC01FA8DBE70042B6C6 /* libFuckDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A4E0BA71FA8DBE70042B6C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "马旭";
+				TargetAttributes = {
+					5A4E0BB11FA8DBE70042B6C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5A4E0BBF1FA8DBE70042B6C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A4E0BAA1FA8DBE70042B6C6 /* Build configuration list for PBXProject "FuckDingTalk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A4E0BA61FA8DBE70042B6C6;
+			productRefGroup = 5A4E0BB31FA8DBE70042B6C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A4E0BB11FA8DBE70042B6C6 /* FuckDingTalk */,
+				5A4E0BBF1FA8DBE70042B6C6 /* FuckDingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A4E0BAE1FA8DBE70042B6C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E0BB91FA8DBE70042B6C6 /* put ipa or app here in Resources */,
+				5A4E0BB61FA8DBE70042B6C6 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A4E0BAD1FA8DBE70042B6C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		5A4E0BB01FA8DBE70042B6C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		5A4E0BBB1FA8DBE70042B6C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A4E0BAB1FA8DBE70042B6C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4E0BBC1FA8DBE70042B6C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E0BDD1FA8DBE70042B6C6 /* AntiAntiDebug.m in Sources */,
+				5A4E0BF51FA8DC050042B6C6 /* DingtalkPluginConfig.m in Sources */,
+				5A4E0BD81FA8DBE70042B6C6 /* MethodTrace.m in Sources */,
+				5A4E0BE01FA8DBE70042B6C6 /* fishhook.c in Sources */,
+				5A4E0BD41FA8DBE70042B6C6 /* ANYMethodLog.m in Sources */,
+				5A4E0BE51FA8DBE70042B6C6 /* FuckDingTalkDylib.mm in Sources */,
+				5A4E0BE91FA8DBE70042B6C6 /* FuckDingTalkDylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A4E0BC31FA8DBE70042B6C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A4E0BBF1FA8DBE70042B6C6 /* FuckDingTalkDylib */;
+			targetProxy = 5A4E0BC21FA8DBE70042B6C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A4E0BEA1FA8DBE70042B6C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A4E0BEB1FA8DBE70042B6C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A4E0BED1FA8DBE70042B6C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZ9329T9X9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckDingTalkDylib/FuckDingTalkDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libFuckDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"FuckDingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		5A4E0BEE1FA8DBE70042B6C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = ZZ9329T9X9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FuckDingTalkDylib/FuckDingTalkDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libFuckDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"FuckDingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A4E0BF01FA8DBE70042B6C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZ9329T9X9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = FuckDingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A4E0BF11FA8DBE70042B6C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZ9329T9X9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = FuckDingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A4E0BAA1FA8DBE70042B6C6 /* Build configuration list for PBXProject "FuckDingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E0BEA1FA8DBE70042B6C6 /* Debug */,
+				5A4E0BEB1FA8DBE70042B6C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4E0BEC1FA8DBE70042B6C6 /* Build configuration list for PBXNativeTarget "FuckDingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E0BED1FA8DBE70042B6C6 /* Debug */,
+				5A4E0BEE1FA8DBE70042B6C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4E0BEF1FA8DBE70042B6C6 /* Build configuration list for PBXNativeTarget "FuckDingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E0BF01FA8DBE70042B6C6 /* Debug */,
+				5A4E0BF11FA8DBE70042B6C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A4E0BA71FA8DBE70042B6C6 /* Project object */;
+}
