@@ -1,4 +1,7 @@
 # FuckDingTalk
+
+根据大佬的[DingtalkPod](https://github.com/deskOfDafa/DingtalkPod)进行修改的
+
 开启方式：我的->设置->关于->版权信息
 
 修改定位：在`DingtalkPluginConfig.m`中修改经纬度
