@@ -16,7 +16,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-TargetApp/
+
+## MonkeyDev
+*.app
 
 ## Other
 *.moved-aside

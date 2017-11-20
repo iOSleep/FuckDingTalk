@@ -22,8 +22,8 @@ CHDeclareClass(CLLocation);
 CHOptimizedMethod0(self, CLLocationCoordinate2D, CLLocation, coordinate){
     CLLocationCoordinate2D coordinate = CHSuper(0, CLLocation, coordinate);
     if([DingtalkPluginConfig sharedInstance].open){
-        CLLocationDegrees latitude = [DingtalkPluginConfig sharedInstance].location.latitude - (arc4random()%100) / 1000000.0;
-        CLLocationDegrees longitude = [DingtalkPluginConfig sharedInstance].location.longitude - (arc4random()%100) / 1000000.0;
+        CLLocationDegrees latitude = [DingtalkPluginConfig sharedInstance].location.latitude - (arc4random()%150) / 1000000.0;
+        CLLocationDegrees longitude = [DingtalkPluginConfig sharedInstance].location.longitude - (arc4random()%150) / 1000000.0;
         coordinate = CLLocationCoordinate2DMake(latitude, longitude);
     }
     return coordinate;
